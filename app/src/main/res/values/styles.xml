@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+
+    </style>
+
+    <style name="AppThemess" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+
+    </style>
+
+    <style name="Loading" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+
+    </style>
+
+    <style name="AppThemes" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/bg</item>
+        <item name="colorPrimaryDark">@color/bg</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppThemesss" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/bg</item>
+        <item name="colorPrimaryDark">@color/bg</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation"></item>
+        <item name="android:windowExitAnimation">@anim/alpha_</item>
+    </style>
+
+
+</resources>

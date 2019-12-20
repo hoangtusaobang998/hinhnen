@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hinhnen4k</string>
+    <string name="home">Home</string>
+    <string name="yeuthich">Yêu thích</string>
+    <string name="user">Người dùng</string>
+    <string name="timkiem">Tìm kiếm</string>
+    <string name="them">xem thêm...</string>
+    <string name="errnetwork">Lỗi kết nối</string>
+    <string name="timkiem_nhap">Nhập từ khóa tìm kiếm</string>
+    <string name="nhap_search">Vui lòng nhập</string>
+    <string name="khongtimthay">Từ khóa không tồn tại</string>
+    <string name="timkiem_cho">Kết quả với</string>
+    <string name="end">Hết</string>
+    <string name="hinhnen">Hình nền</string>
+
+</resources>

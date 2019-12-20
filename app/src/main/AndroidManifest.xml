@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.teamdev.hinhnen4k">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature android:name="android.software.live_wallpaper" />
+    <uses-permission android:name="android.permission.BIND_WALLPAPER"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".SampleApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DetailVideoActivity"
+            android:theme="@style/AppThemes"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".SearchActivity"
+            android:theme="@style/AppThemess" />
+        <activity android:name=".Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IMGActivity"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name=".DetailActivity"
+            android:theme="@style/AppThemesss" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemess" />
+
+        <service android:name="com.ixuea.android.downloader.DownloadService">
+            <intent-filter>
+                <action android:name="com.ixuea.android.downloader.DOWNLOAD_SERVICE" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service android:name=".service.VideoWallpaperService"
+            android:label="movie live wallpaper" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/wallpaper" />
+        </service>
+    </application>
+
+</manifest>

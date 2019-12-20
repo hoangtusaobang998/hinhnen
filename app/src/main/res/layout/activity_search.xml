@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="12dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.15"
+                android:background="@drawable/shape_search" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:alpha="0.76"
+                android:padding="5dp"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img"
+                android:alpha="0.76"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                android:fontFamily="sans-serif-thin"
+                android:hint="@string/timkiem_nhap"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerview_search"
+                tools:listitem="@layout/item_search"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerview_search_v1"
+                />
+            <ProgressBar
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:theme="@style/AppTheme"
+                android:id="@+id/loadingview"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                />
+
+
+</LinearLayout>

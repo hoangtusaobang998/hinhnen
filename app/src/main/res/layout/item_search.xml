@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/v2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        >
+        <View
+            android:layout_toLeftOf="@id/v10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_search"
+            android:alpha="0.15"/>
+        <ImageView
+            android:alpha="0.76"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_search"/>
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginRight="10dp"
+            android:id="@+id/title"
+            android:alpha="0.76"
+            android:layout_toRightOf="@id/img"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timkiem"/>
+
+        <View
+            android:layout_toRightOf="@id/title"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/v10"/>
+
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

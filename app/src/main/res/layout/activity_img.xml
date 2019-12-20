@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IMGActivity"
+    android:background="@color/white">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_centerInParent="true"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:spanCount="2"
+        tools:listitem="@layout/item_view_recyclerview"
+        android:layout_above="@id/loadingview"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:padding="1dp"
+        android:id="@+id/layout4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        >
+        <View
+            android:background="@drawable/shape_tron"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.35"/>
+
+        <ImageView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="6dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat ="@drawable/ic_reply"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:theme="@style/Loading"
+        android:id="@+id/loadingview"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        />
+
+</RelativeLayout>
