@@ -164,8 +164,8 @@ public class MainActivity extends AppCompatActivity implements Listen, Recyclerv
                         });
                         new DownloadAsyncTaskIMGGIF(MainActivity.this).execute(URL_VIDEO[0]);
                     }
-                    scrollView.startAnimation(animation2);
-                    aah_customRecyclerView.startAnimation(animation3);
+                    scrollView.startAnimation(animation3);
+                    aah_customRecyclerView.startAnimation(animation2);
                     scrollView.setVisibility(View.GONE);
                     aah_customRecyclerView.setVisibility(View.VISIBLE);
                 }
